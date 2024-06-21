@@ -8,7 +8,7 @@ struct Scheduler:
         self.jobs = List[Job]()
 
     fn every(self, interval: Int) -> Job:
-        var job = Job(1)
+        var job = Job(interval)
         return job
     
     fn should_run(self) -> Bool:
